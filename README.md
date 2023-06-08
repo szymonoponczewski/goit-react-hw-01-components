@@ -1,3 +1,3 @@
 # goit-react-hw-01-components
 
-adres
+https://szymonoponczewski.github.io/goit-react-hw-01-components/
