@@ -18,7 +18,6 @@ export const Statistics = ({ title = "Upload stats", data }) => {
   return (
     <section className={css.statistics}>
       {title && <h2 className={css.title}>{title}</h2>}
-
       <ul className={css["stat-list"]}>
         {data.map(({ label, percentage, id }) => (
           <li
