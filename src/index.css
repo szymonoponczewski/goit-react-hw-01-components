@@ -2,7 +2,7 @@
 @import "./components/modern-normalize.css";
 
 body {
-  margin: 0;
+  margin: 30px;
   display: flex;
   justify-content: center;
   background-color: lightslategray;

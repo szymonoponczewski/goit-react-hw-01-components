@@ -3,24 +3,24 @@ import css from "./data.module.css";
 
 export const getRandomColor = () => {
   const colors = [
-    "#ff0000",
-    "#00ff00",
-    "#0000ff",
-    "#ffff00",
-    "#ff00ff",
-    "#00ffff",
+    "#89cff0",
+    "#9adedb",
+    "#b39eb5",
+    "#ff694f",
+    "#99c5c4",
+    "#bee7a5",
   ];
   const randomIndex = Math.floor(Math.random() * colors.length);
   return colors[randomIndex];
 };
 
-export const Statistics = ({ title, stats }) => {
+export const Statistics = ({ title = "Upload stats", data }) => {
   return (
     <section className={css.statistics}>
       {title && <h2 className={css.title}>{title}</h2>}
 
       <ul className={css["stat-list"]}>
-        {stats.map(({ label, percentage, id }) => (
+        {data.map(({ label, percentage, id }) => (
           <li
             key={id}
             className={css.item}
@@ -37,7 +37,7 @@ export const Statistics = ({ title, stats }) => {
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.arrayOf(
+  data: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
       label: PropTypes.string.isRequired,
