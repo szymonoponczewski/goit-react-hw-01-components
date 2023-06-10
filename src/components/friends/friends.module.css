@@ -1,0 +1,39 @@
+.friend-list {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.item {
+  background-color: white;
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+  padding: 25px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.avatar {
+  width: 48px;
+}
+
+.name {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.status {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.status.userOn {
+  background-color: green;
+}
+
+.status.userOff {
+  background-color: red;
+}
