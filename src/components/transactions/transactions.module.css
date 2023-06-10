@@ -1,0 +1,33 @@
+.transaction-history {
+  margin: 30px auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-history th,
+.transaction-history td {
+  padding: 12px;
+  text-align: center;
+}
+
+.transaction-history th {
+  background-color: teal;
+  font-weight: 700;
+  color: white;
+}
+
+.transaction-history td:not(:last-child) {
+  border-right: 1px solid black;
+}
+
+.transaction-history tbody tr:nth-child(odd) td {
+  background-color: white;
+}
+
+.transaction-history tbody tr:nth-child(even) td {
+  background-color: gainsboro;
+}
+
+.transaction-history tbody tr:last-child td {
+  border-bottom: none;
+}
